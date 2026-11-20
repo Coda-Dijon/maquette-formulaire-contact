@@ -22,7 +22,24 @@
             <label for="nom">Nom</label>
             <input id="nom" type="text" name="nom" required>
         </section>
+            <section>
+                <label for="tel">Teléphone</label>
+                <input id="tel" type="tel" name="tel" >
+            </section>
 
+            <section>
+                <label for="url">URL</label>
+                <input id="url" type="url" name="url" >
+            </section>
+
+            <section>
+                <label for="date">Date</label>
+                <input id="date" type="date" name="date" >
+            </section>
+            <section>
+                <label for="datetime">Date et heure</label>
+                <input id="datetime" type="datetime-local" name="datetime" >
+            </section>
         <section>
             <label for="email">E-mail</label>
             <input id="email" type="email" name="email" required>
@@ -30,7 +47,7 @@
 
         <section>
             <label for="code_postal">Code postal</label>
-            <input id="code_postal" type="text" pattern="[A-B0-9]{6}"  title="Un code postal doit être constitué de 5 caractères AB ou 0 à 9. Ex. 21000"minlength="5" >
+            <input id="code_postal" type="text" pattern="[A-B0-9]{5}"  title="Un code postal doit être constitué de 5 caractères AB ou 0 à 9. Ex. 21000"minlength="5" >
         </section>
 
         </fieldset>
@@ -67,6 +84,8 @@
             </label>
             <textarea name="message" id="message"  rows="3" required></textarea>
         </section>
+
+
 
 
         <!-- Consigne 7 : champ Code postal avec pattern -->
