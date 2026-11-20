@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Formulaire de contact</h1>
+<main>
+    <!-- Consigne 1 : en-tête du formulaire -->
+    <h2>Contactez-nous</h2>
+    <p>Posez-nous vos questions et on y répondra (ou pas).</p>
+
+    <form>
+
+        <fieldset>
+        <legend>Informations de contact</legend>
+        <!-- Consigne 2 : champs Nom et E-mail avec label et required -->
+        <section>
+            <label for="nom">Nom</label>
+            <input id="nom" type="text" name="nom" required>
+        </section>
+
+        <section>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" required>
+        </section>
+
+        <section>
+            <label for="code_postal">Code postal</label>
+            <input id="code_postal" type="text" pattern="[A-B0-9]{6}"  title="Un code postal doit être constitué de 5 caractères AB ou 0 à 9. Ex. 21000"minlength="5" >
+        </section>
+
+        </fieldset>
+
+        <!-- Consigne 6 : fieldset et legend -->
+
+
+        <!-- Consigne 3 : select avec 3 options -->
+        <label for="sujet">Sujet</label>
+        <select name="sujet" id="sujet">
+
+            <option >Question</option>
+            <option >Problème techique</option>
+            <option >Remboursement</option>
+
+        </select>
+        <label for="sujet2">Sujet</label>
+        <input name="sujet2" id="sujet2" list="liste-sujets">
+
+
+
+        <datalist id="liste-sujets">
+            <option >Question</option>
+            <option >Problème techique</option>
+            <option >Remboursement</option>
+
+        </datalist>
+        <!-- Consigne 9 (optionnel) : remplacer le select par un input + datalist -->
+
+        <!-- Consigne 4 : textarea avec required -->
+        <section>
+
+            <label for="message">Message
+            </label>
+            <textarea name="message" id="message"  rows="3" required></textarea>
+        </section>
+
+
+        <!-- Consigne 7 : champ Code postal avec pattern -->
+
+        <!-- Consigne 5 : bouton d'envoi -->
+        <button type="submit">Envoyer</button>
+        <button type="reset">Reset</button>
+    </form>
+</main>
+</body>
+</html>
