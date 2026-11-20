@@ -1,0 +1,35 @@
+/* Consigne 8 : style de base du formulaire */
+
+/* Exemple de point de départ : */
+
+body {
+    font-family: system-ui, sans-serif;
+    max-width: min(100% - 2rem, 72rem);
+    margin-inline: auto;
+    padding: 1rem;
+}
+
+form {
+    /* Ajouter un padding, une bordure et un espacement */
+}
+
+fieldset {
+    /* Espacer les groupes de champs */
+}
+
+label {
+    /* Rendre les labels plus lisibles */
+}
+
+input,
+select,
+textarea {
+    /* Style de base pour les champs */
+}
+
+button {
+    /* Style du bouton d'envoi */
+}
+
+/* Consigne 9 (optionnel) : datalist — pas de style spécifique nécessaire,
+   le navigateur gère les suggestions nativement */
